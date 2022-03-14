@@ -1,0 +1,328 @@
+@charset "UTF-8";
+/* couleur */
+/* composents */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Shrikhand&display=swap");
+body {
+  margin: 0px;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+/* début header */
+.header-logo {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  text-align: center;
+  height: 55px;
+}
+.header-logo .logo {
+  width: 90%;
+}
+.header-logo .logo .header-logo_img {
+  width: 160px;
+  height: 100%;
+}
+
+.Acceuil {
+  display: flex;
+  align-items: center;
+}
+.Acceuil .link-accueil {
+  color: black;
+}
+
+/* fin du header */
+/* début footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #292828;
+  padding-left: 10px;
+  height: auto;
+}
+@media screen and (min-width: 426px) {
+  footer {
+    align-items: center;
+  }
+}
+footer .logo-footer {
+  filter: invert(100%);
+  width: 105px;
+  padding: 30px 10px 10px 10px;
+}
+footer .bloc-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px 30px 10px;
+  color: white;
+  gap: 10px;
+  height: auto;
+}
+@media screen and (min-width: 426px) {
+  footer .bloc-footer {
+    align-items: center;
+  }
+}
+footer .bloc-footer .link-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .bloc-footer .link-footer .icon-footer {
+  width: 20px;
+}
+footer .bloc-footer .link-footer .icon-footer .fa-utensils {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a h4 {
+  margin: 0px;
+}
+
+/* fin footer */
+/* début main */
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+}
+main .image-top {
+  display: flex;
+  flex-direction: column;
+}
+main .image-top img {
+  object-fit: cover;
+  height: 245px;
+}
+main .section-menu {
+  margin-top: -40px;
+}
+main .section-menu .titre-restaurant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  margin-bottom: -20px;
+}
+main .section-menu .titre-restaurant h3 {
+  margin-left: 20px;
+  font-family: "Shrikhand";
+  font-size: 26px;
+  font-weight: normal;
+}
+
+/* fin main */
+@media screen and (min-width: 769px) {
+  .bloc-desktop-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+/* début bloc btn */
+.bloc-btn-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+@media screen and (min-width: 769px) {
+  .bloc-btn-menu {
+    padding: 10px;
+  }
+}
+.bloc-btn-menu .titre-bloc > h3 {
+  border-bottom: 3px solid #99E2D0;
+  width: 50px;
+  font: inherit;
+}
+.bloc-btn-menu .btn-menu-1, .bloc-btn-menu .btn-menu-2, .bloc-btn-menu .btn-menu-3 {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  margin: 10px 0 10px 0;
+  box-shadow: 0 0 5px 1px gainsboro;
+  background-color: white;
+  overflow: hidden;
+  animation: loading-menu 2s both;
+  transform: scale(0);
+}
+@media screen and (min-width: 769px) {
+  .bloc-btn-menu .btn-menu-1, .bloc-btn-menu .btn-menu-2, .bloc-btn-menu .btn-menu-3 {
+    width: 360px;
+  }
+}
+.bloc-btn-menu .btn-menu-1 .texte-btn-menu, .bloc-btn-menu .btn-menu-2 .texte-btn-menu, .bloc-btn-menu .btn-menu-3 .texte-btn-menu {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: auto;
+  flex: 1;
+}
+.bloc-btn-menu .btn-menu-1 .texte-btn-menu h3, .bloc-btn-menu .btn-menu-1 .texte-btn-menu p, .bloc-btn-menu .btn-menu-2 .texte-btn-menu h3, .bloc-btn-menu .btn-menu-2 .texte-btn-menu p, .bloc-btn-menu .btn-menu-3 .texte-btn-menu h3, .bloc-btn-menu .btn-menu-3 .texte-btn-menu p {
+  margin: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.bloc-btn-menu .btn-menu-1 .prix, .bloc-btn-menu .btn-menu-2 .prix, .bloc-btn-menu .btn-menu-3 .prix {
+  display: flex;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-bottom: -5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.bloc-btn-menu .btn-menu-1 .checker, .bloc-btn-menu .btn-menu-2 .checker, .bloc-btn-menu .btn-menu-3 .checker {
+  display: flex;
+  justify-content: center;
+  height: 72px;
+  width: 70px;
+  margin-right: -70px;
+  background-color: #99E2D0;
+  transition-duration: 1s;
+}
+.bloc-btn-menu .btn-menu-1 .checker .icon-check, .bloc-btn-menu .btn-menu-2 .checker .icon-check, .bloc-btn-menu .btn-menu-3 .checker .icon-check {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+}
+.bloc-btn-menu .btn-menu-1:hover > .checker, .bloc-btn-menu .btn-menu-2:hover > .checker, .bloc-btn-menu .btn-menu-3:hover > .checker {
+  margin-right: 0px;
+}
+.bloc-btn-menu .btn-menu-1:hover .icon-check, .bloc-btn-menu .btn-menu-2:hover .icon-check, .bloc-btn-menu .btn-menu-3:hover .icon-check {
+  transition: all 0.5s 0.5s;
+  transform: rotate(360deg);
+}
+
+@keyframes loading-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+/* fin bloc btn */
+/* btn Accueil */
+.btn-accueil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
+  border-radius: 25px;
+  box-shadow: 0px 1px 5px 1px #dedada;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  height: 40px;
+  width: 190px;
+  cursor: pointer;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.btn-accueil:hover {
+  transform: scale(1.05);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(90deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+}
+
+/* fin btn Accueil */
+/* btn menu */
+.bloc-commander {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 65px;
+  background-color: #f6f6f6;
+}
+.bloc-commander .btn-commander {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: white;
+  background-image: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
+  border-radius: 25px;
+  height: 40px;
+  width: 150px;
+  box-shadow: 0px 1px 5px 1px darkgrey;
+  margin-top: 10px;
+  cursor: pointer;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.bloc-commander .btn-commander:hover {
+  transform: scale(1.05);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(90deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+}
+
+/* fin btn menu */
+/* début heart */
+.heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 20px;
+  margin-top: 25px;
+}
+.heart .fa-heart {
+  font-size: 24px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.heart .far {
+  opacity: 1;
+  z-index: 2;
+  transition: opacity 1s ease-in-out;
+}
+.heart .far:hover {
+  opacity: 0;
+  z-index: 1;
+}
+.heart .far:hover + .fas {
+  opacity: 1;
+  z-index: 2;
+  animation: heartfull 0.5s linear both;
+}
+.heart .fas {
+  background: linear-gradient(63deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  z-index: 1;
+  transform-origin: 50% bottom;
+  transform: scale(1);
+  animation: transform 0.5s cubic-bezier(0.5, 2, 1, 0.5);
+}
+
+@keyframes heartfull {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* fin heart */
+
+/*# sourceMappingURL=Restaurants.css.map */

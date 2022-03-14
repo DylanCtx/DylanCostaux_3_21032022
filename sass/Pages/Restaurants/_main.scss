@@ -1,0 +1,39 @@
+/* début main */
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+
+    .image-top {
+        display: flex;
+        flex-direction: column;
+    
+        img {
+            object-fit: cover;  
+            height: 245px;
+        }
+    }
+
+    .section-menu {
+        margin-top: -40px;
+
+        .titre-restaurant {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f6f6f6;
+            border-top-left-radius: 35px;
+            border-top-right-radius: 35px;
+            margin-bottom: -20px;
+ 
+            h3 {
+                margin-left: 20px;
+                 font-family: "Shrikhand";
+                font-size: 26px;
+                font-weight: normal;
+
+            }
+        }
+    }
+}
+/* fin main */

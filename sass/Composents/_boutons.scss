@@ -1,0 +1,58 @@
+/* btn Accueil */
+.btn-accueil {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   background-image: $btn;
+   border-radius: 25px;
+   box-shadow: 0px 1px 5px 1px #dedada;
+   margin-bottom: 50px;
+   margin-top: 10px;
+   height: 40px;
+   width: 190px;
+   cursor: pointer;
+   transform: scale(1);
+   transition-property: transform;
+   transition-duration: 1000ms;
+
+   &:hover {
+      transform: scale(1.05);
+      box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+      background-image: linear-gradient(90deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+   }
+}
+/* fin btn Accueil */
+
+/* btn menu */
+.bloc-commander {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 65px;
+   background-color: #f6f6f6;
+
+   .btn-commander {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      color: white;
+      background-image: $btn;
+      border-radius: 25px;
+      height: 40px;
+      width: 150px;
+      box-shadow: 0px 1px 5px 1px darkgrey;
+      margin-top: 10px; 
+      cursor: pointer;
+      transform: scale(1);
+      transition-property: transform;
+      transition-duration: 1000ms;
+
+      &:hover {
+         transform: scale(1.05);
+         box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+         background-image: linear-gradient(90deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+      }
+   }
+}
+/* fin btn menu */

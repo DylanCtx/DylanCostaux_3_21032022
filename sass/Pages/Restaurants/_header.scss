@@ -1,0 +1,27 @@
+/* début header */
+.header-logo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: center;
+    height: 55px;
+
+    .logo {
+        width: 90%;
+  
+        .header-logo_img {
+            width: 160px;
+            height: 100%;
+        }
+    }
+}
+
+.Acceuil {
+    display: flex;
+    align-items: center;
+
+    .link-accueil  {
+        color: black;
+    }
+}
+/* fin du header */

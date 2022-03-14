@@ -1,0 +1,14 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet OhmyFood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/Acceuil.scss:./css/Acceuil.css ./sass/Restaurants.scss:./css/Restaurants.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.49.0"
+  }
+}

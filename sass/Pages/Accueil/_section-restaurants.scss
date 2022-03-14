@@ -1,0 +1,21 @@
+/* début section-restaurants */
+.section-restaurants {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    padding: 20px 20px 40px;
+    
+    .bloc-cartes{
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+
+        @media screen and (min-width: 769px) {
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }    
+}
+/* fin section-restaurants */

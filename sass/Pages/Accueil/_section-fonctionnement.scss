@@ -1,0 +1,82 @@
+/* début fonction */
+.section-fonction {
+    background-color: white;
+    padding: 20px 20px 60px;
+    
+    @media screen and (min-width: 769px) {
+        padding: 20px 20px 40px;
+    }
+
+    .bloc-btn-fonction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-left: 10px;
+
+        @media screen and (min-width: 426px) {
+            margin: 0;
+        }
+        @media screen and (min-width: 769px) {
+            flex-direction: row;
+        }
+
+        .btn-fonction {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 75px;
+            background-color: #f6f6f6;
+            border-radius: 20px;
+            box-shadow: 0 0 8px 1px lightgrey;
+            
+            & .icon-fonction {
+                color: $primary;
+            }
+            &:hover{
+                background-color:  lighten($primary, 40%);
+                box-shadow: 0 0 8px 2px lightgrey;
+                
+                .fas{
+                    color: $primary;
+                }
+            }
+
+            @media screen and (min-width: 426px) {
+                justify-content: center;
+            }
+        
+            .nombre {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                color: #ffffff;
+                background-color: $primary;
+                left: -15px;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+            } 
+        
+            .icon-fonction {
+                width: 10%;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+                color: gray;
+            }
+
+            .text-fonction {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 20px;
+                font-weight: bold;   
+            }   
+        }         
+    } 
+}            
+/* fin fonction */
+

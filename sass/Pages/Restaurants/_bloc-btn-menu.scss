@@ -1,0 +1,99 @@
+/* début bloc btn */
+
+.bloc-btn-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    padding: 20px;
+
+    @media screen and (min-width: 769px) {
+        padding: 10px;
+    }
+
+    .titre-bloc > h3 {
+        border-bottom: 3px solid #99E2D0;
+        width: 50px;
+        font: inherit;
+    }
+
+        .btn-menu-1,.btn-menu-2,.btn-menu-3 {
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            margin: 10px 0 10px 0;
+            box-shadow: 0 0 5px 1px gainsboro;
+            background-color: white;
+            overflow: hidden;
+            animation : loading-menu 2s both;
+            transform: scale(0);
+
+            @media screen and (min-width: 769px) {
+                width: 360px;
+            }
+
+                .texte-btn-menu {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    width: auto;
+                    flex: 1;
+                
+                    h3,p {
+                        margin: 10px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+
+                }    
+      
+                .prix {
+                    display: flex;
+                    margin-top: 25px;
+                    margin-right: 20px;
+                    margin-bottom: -5px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+
+                .checker {
+                    display: flex;
+                    justify-content: center;
+                    height: 72px;
+                    width: 70px;
+                    margin-right: -70px;
+                    background-color: $tertiaire;
+                    transition-duration: 1s;
+
+                    .icon-check {
+                        display: flex;
+                        align-items: center;
+                        color: white;
+                        font-size: 25px;
+                    }
+                }
+
+                &:hover > .checker {
+                    margin-right: 0px;
+                }
+
+                &:hover  .icon-check {
+                    transition: all 0.5s 0.5s;
+                    transform: rotate(360deg);
+                }
+        }    
+} 
+
+@keyframes loading-menu {
+    
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+
+/* fin bloc btn */
