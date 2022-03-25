@@ -8,6 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* début loader */
 #preloader {
   position: fixed;
   top: 0;
@@ -16,8 +17,7 @@ body {
   height: 100%;
   animation: spin 3s ease-in-out both;
 }
-
-#loader {
+#preloader #loader {
   display: block;
   position: absolute;
   left: 50%;
@@ -71,6 +71,7 @@ body {
     z-index: 0;
   }
 }
+/* fin loader */
 /* début header */
 .header-logo {
   display: flex;

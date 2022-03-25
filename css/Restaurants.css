@@ -121,6 +121,7 @@ main .section-menu .titre-restaurant h3 {
 }
 
 /* fin main */
+/* début bloc-desktop-menu */
 @media screen and (min-width: 769px) {
   .bloc-desktop-menu {
     display: flex;
@@ -129,11 +130,11 @@ main .section-menu .titre-restaurant h3 {
   }
 }
 
+/* fin bloc-desktop-menu */
 /* début bloc btn */
 .bloc-btn-menu {
   display: flex;
   flex-direction: column;
-  background-color: #f6f6f6;
   padding: 20px;
 }
 @media screen and (min-width: 769px) {
@@ -156,10 +157,11 @@ main .section-menu .titre-restaurant h3 {
   overflow: hidden;
   animation: loading-menu 2s both;
   transform: scale(0);
+  cursor: pointer;
 }
 @media screen and (min-width: 769px) {
   .bloc-btn-menu .btn-menu-1, .bloc-btn-menu .btn-menu-2, .bloc-btn-menu .btn-menu-3 {
-    width: 360px;
+    width: 400px;
   }
 }
 .bloc-btn-menu .btn-menu-1 .texte-btn-menu, .bloc-btn-menu .btn-menu-2 .texte-btn-menu, .bloc-btn-menu .btn-menu-3 .texte-btn-menu {

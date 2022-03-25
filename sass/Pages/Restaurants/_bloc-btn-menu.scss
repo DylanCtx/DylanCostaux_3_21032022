@@ -3,7 +3,6 @@
 .bloc-btn-menu {
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6;
     padding: 20px;
 
     @media screen and (min-width: 769px) {
@@ -26,9 +25,10 @@
             overflow: hidden;
             animation : loading-menu 2s both;
             transform: scale(0);
+            cursor: pointer;
 
             @media screen and (min-width: 769px) {
-                width: 360px;
+                width: 400px;
             }
 
                 .texte-btn-menu {
