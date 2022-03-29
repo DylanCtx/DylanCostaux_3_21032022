@@ -30,8 +30,7 @@ body {
   border-top-color: #9356DC;
   animation: spin 3s ease-in-out both;
 }
-
-#loader:before {
+#preloader #loader:before {
   content: "";
   position: absolute;
   top: 5px;
@@ -43,8 +42,7 @@ body {
   border-top-color: #FF79DA;
   animation: spin 3s ease-in-out both;
 }
-
-#loader:after {
+#preloader #loader:after {
   content: "";
   position: absolute;
   top: 15px;
