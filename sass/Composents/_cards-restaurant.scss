@@ -54,6 +54,7 @@
                     
             @media screen and (min-width: 426px) {   
                 width: -webkit-fill-available;
+                width: -moz-available;
             }
 
             h3 {

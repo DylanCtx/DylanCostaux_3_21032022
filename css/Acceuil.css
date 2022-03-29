@@ -329,6 +329,7 @@ a h4 {
 @media screen and (min-width: 426px) {
   .carte-restaurants .détails-carte {
     width: -webkit-fill-available;
+    width: -moz-available;
   }
 }
 .carte-restaurants .détails-carte h3 {
