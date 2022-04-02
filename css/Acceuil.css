@@ -52,7 +52,7 @@ body {
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #99E2D0;
-  animation: spin 3s ease-in-out both;
+  animation: spin 3s infinite;
 }
 
 @keyframes spin {
